@@ -1,0 +1,217 @@
+.greybackground {
+  background-color: #f6f6f6;
+  padding: 0 0 20px 0;
+}
+
+.darkgreybackground {
+  background-color: #eaeaea;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand-Regular.ttf");
+}
+body {
+  font-family: "Shrikhand", Arial, sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header__logo {
+  width: 100%;
+  box-shadow: 0px 0px 5px 0px grey;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+.header__logo__url {
+  display: flex;
+  justify-content: center;
+}
+.header__logo__img {
+  width: 50%;
+  padding: 16px;
+}
+
+.hprestaurantscard {
+  background-color: #ffffff;
+  width: 92%;
+  margin: 20px auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 13px 2px #cccccc;
+  position: relative;
+}
+.hprestaurantscard__img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  max-height: 190px;
+}
+.hprestaurantscard__name {
+  font-weight: bold;
+  padding: 15px 0 15px 15px;
+}
+.hprestaurantscard__district {
+  padding: 0 0 15px 15px;
+}
+.hprestaurantscard__stickernew {
+  color: #008766;
+  background-color: #99E2D0;
+  position: absolute;
+  right: 15px;
+  padding: 10px;
+  top: 15px;
+}
+
+.hptitles {
+  margin-left: 20px;
+  padding-top: 35px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.fa-map-marker-alt {
+  margin: 10px;
+}
+
+.fa-utensils, .fa-hands-helping {
+  margin: 0 10px 0 0;
+  color: #ffffff;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+.operating {
+  padding-bottom: 25px;
+}
+.operating__item {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 75%;
+  margin: 30px auto;
+  padding: 8px 20px;
+  box-shadow: 0px 0px 13px 2px #cccccc;
+  position: relative;
+}
+.operating__item:hover {
+  background-color: #f5edff;
+}
+.operating__item:hover + .operating__icon {
+  color: #9356DC;
+}
+.operating__number__container {
+  background-color: #9356DC;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -8px;
+}
+.operating__number {
+  margin: 0;
+  color: #ffffff;
+  position: absolute;
+  left: 5px;
+  top: 2px;
+}
+.operating__icon {
+  color: #7e7e7e;
+  margin: 0 18px;
+}
+.operating__text {
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.valueproposition {
+  background-color: #f6f6f6;
+  padding: 20px 0 40px 0;
+}
+.valueproposition__text {
+  margin: auto;
+  text-align: center;
+}
+.valueproposition__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+.valueproposition__subtitle {
+  padding-bottom: 25px;
+}
+.valueproposition__cta {
+  padding: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: fit-content;
+  border-radius: 50px;
+  margin: auto;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px 1px #cccccc;
+  max-width: 160px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer__entry {
+  color: #ffffff;
+  padding: 0 0 10px 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
