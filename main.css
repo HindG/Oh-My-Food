@@ -73,10 +73,15 @@ h1 {
   font-family: "Shrikhand", Arial, sans-serif;
 }
 
+.header {
+  position: relative;
+}
 .header__logo {
   width: 100%;
-  box-shadow: 0px 0px 5px 0px grey;
   background-color: #ffffff;
+}
+.header__logoshadow {
+  box-shadow: 0px 0px 5px 0px grey;
   margin-bottom: 5px;
 }
 .header__logo__url {
@@ -86,6 +91,16 @@ h1 {
 .header__logo__img {
   width: 50%;
   padding: 16px;
+}
+.header__arrow__url {
+  color: #353535;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  font-size: 1.2rem;
+  left: 25px;
+  top: 25px;
 }
 
 .hprestaurantscard {
@@ -124,13 +139,6 @@ h1 {
   top: 15px;
 }
 
-.fa-heart {
-  position: absolute;
-  right: 30px;
-  bottom: 28px;
-  font-size: 2rem;
-}
-
 .hptitles {
   margin-left: 20px;
   padding-top: 35px;
@@ -145,6 +153,13 @@ h1 {
 .fa-utensils, .fa-hands-helping {
   margin: 0 10px 0 0;
   color: #ffffff;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 1.8rem;
 }
 
 .location {
@@ -216,17 +231,6 @@ h1 {
 .valueproposition__subtitle {
   padding-bottom: 25px;
 }
-.valueproposition__cta {
-  padding: 15px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  width: fit-content;
-  border-radius: 50px;
-  margin: auto;
-  color: #ffffff;
-  box-shadow: 0px 0px 5px 1px #cccccc;
-  max-width: 222px;
-  text-align: center;
-}
 
 .footer {
   background-color: #353535;
@@ -238,6 +242,70 @@ h1 {
 .footer__logo {
   width: 90px;
   margin: 20px;
+}
+
+.coverrestaurant {
+  position: relative;
+}
+.coverrestaurant__img {
+  width: 100%;
+}
+.coverrestaurant__title {
+  margin-left: 20px;
+  padding: 30px 0;
+  font-size: 1.7rem;
+  border-radius: 25px 25px 0 0;
+}
+
+.menusections__title {
+  color: #7b7b7b;
+  margin: 30px 0 0 20px;
+}
+.menusections__trait {
+  background-color: #99E2D0;
+  height: 3px;
+  width: 40px;
+  margin-left: 20px;
+  margin: 5px 0 0 20px;
+}
+.menusections__card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 12px 10px;
+  padding: 10px 0;
+  box-shadow: 0px 0px 10px 1px #cccccc;
+  position: relative;
+}
+.menusections__card__title {
+  font-weight: bold;
+  padding: 5px 0 8px 15px;
+}
+.menusections__card__subtitle {
+  color: #7b7b7b;
+  margin: 5px 0 10px 15px;
+}
+.menusections__card__price {
+  position: absolute;
+  font-weight: bold;
+  right: 22px;
+  font-size: 0.9rem;
+}
+
+.cta {
+  padding: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: fit-content;
+  border-radius: 50px;
+  margin: auto;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px 1px #cccccc;
+  max-width: 222px;
+  text-align: center;
+  min-width: 150px;
+}
+.cta__pagedetail {
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 /*# sourceMappingURL=main.css.map */
