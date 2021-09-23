@@ -249,6 +249,11 @@ h1 {
 }
 .coverrestaurant__img {
   width: 100%;
+  object-fit: cover;
+  height: 220px;
+}
+.coverrestaurant__img__portrait {
+  object-position: 0 -90px;
 }
 .coverrestaurant__title {
   margin-left: 20px;
