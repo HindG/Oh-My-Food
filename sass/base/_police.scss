@@ -3,6 +3,15 @@
 	src: url("./sass/base/Shrikhand-Regular.ttf");
 }
 
+@font-face {
+	font-family: "Roboto";
+	src: url("./sass/base/Roboto-Regular.ttf");
+}
+
 body {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1 {
 	font-family: 'Shrikhand', Arial, sans-serif;
 }

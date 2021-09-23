@@ -1,4 +1,5 @@
 @import "./base/resetcss";
+@import "./utils/variables";
 @import "./base/backgrounds";
 @import "./base/police";
 @import "./composants/header";
@@ -8,5 +9,4 @@
 @import "./composants/location";
 @import "./composants/operating";
 @import "./composants/valueproposition";
-@import "./utils/variables";
 @import "./layout/footer";

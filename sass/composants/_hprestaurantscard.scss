@@ -10,6 +10,15 @@
         width: 100%;
         border-radius: 25px 25px 0 0;
         max-height:190px;
+        object-fit:cover;
+    }
+
+    &__img__paysage {
+        object-position: bottom;
+    }
+
+    &__img__portrait {
+        object-position: center;
     }
 
     &__name {
@@ -23,10 +32,17 @@
 
     &__stickernew {
         color:#008766;
-        background-color: #99E2D0;
+        background-color: $colour-tertiary;
         position: absolute;
         right: 15px;
         padding: 10px;
         top: 15px;
     }
+}
+
+.fa-heart {
+    position:absolute;
+    right: 30px;
+    bottom: 28px;
+    font-size: 2rem;
 }

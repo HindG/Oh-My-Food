@@ -17,13 +17,13 @@
             background-color: #f5edff;
         }
     
-        &:hover + .operating__icon {
-            color:#9356DC;
+        &:hover .fas {
+            color:$colour-primary;
         }
     }
 
     &__number__container {
-        background-color: #9356DC;
+        background-color: $colour-primary;
         border-radius: 50px;
         width: 20px;
         height: 20px;

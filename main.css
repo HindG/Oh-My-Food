@@ -1,20 +1,3 @@
-.greybackground {
-  background-color: #f6f6f6;
-  padding: 0 0 20px 0;
-}
-
-.darkgreybackground {
-  background-color: #eaeaea;
-}
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url("Shrikhand-Regular.ttf");
-}
-body {
-  font-family: "Shrikhand", Arial, sans-serif;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,6 +48,31 @@ table {
   border-spacing: 0;
 }
 
+.greybackground {
+  background-color: #f6f6f6;
+  padding: 0 0 20px 0;
+}
+
+.darkgreybackground {
+  background-color: #eaeaea;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("./sass/base/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./sass/base/Roboto-Regular.ttf");
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", Arial, sans-serif;
+}
+
 .header__logo {
   width: 100%;
   box-shadow: 0px 0px 5px 0px grey;
@@ -92,6 +100,13 @@ table {
   width: 100%;
   border-radius: 25px 25px 0 0;
   max-height: 190px;
+  object-fit: cover;
+}
+.hprestaurantscard__img__paysage {
+  object-position: bottom;
+}
+.hprestaurantscard__img__portrait {
+  object-position: center;
 }
 .hprestaurantscard__name {
   font-weight: bold;
@@ -109,11 +124,18 @@ table {
   top: 15px;
 }
 
+.fa-heart {
+  position: absolute;
+  right: 30px;
+  bottom: 28px;
+  font-size: 2rem;
+}
+
 .hptitles {
   margin-left: 20px;
   padding-top: 35px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .fa-map-marker-alt {
@@ -151,7 +173,7 @@ table {
 .operating__item:hover {
   background-color: #f5edff;
 }
-.operating__item:hover + .operating__icon {
+.operating__item:hover .fas {
   color: #9356DC;
 }
 .operating__number__container {
@@ -202,7 +224,7 @@ table {
   margin: auto;
   color: #ffffff;
   box-shadow: 0px 0px 5px 1px #cccccc;
-  max-width: 160px;
+  max-width: 222px;
   text-align: center;
 }
 
@@ -212,6 +234,10 @@ table {
 .footer__entry {
   color: #ffffff;
   padding: 0 0 10px 20px;
+}
+.footer__logo {
+  width: 90px;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
