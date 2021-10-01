@@ -7,16 +7,33 @@
     color:#ffffff;
 }
 
-.fa-heart__hp {
+.fa-heart {
     position: absolute;
     right: 30px;
-    bottom: 30px;
     font-size: 1.8rem;
-}
 
-.fa-heart__pagedetail {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    font-size: 1.8rem;
+    &__hp {
+        bottom: 30px;
+    }
+    
+    &__pagedetail {
+        top: 30px;
+    }
+
+    &:hover {
+        opacity:0%;
+    }
+
+    &--hover{
+        opacity: 0%;
+        transition: all .3s linear;
+         &:hover {
+            opacity: 100%;
+            background: linear-gradient(#FF79DA, #9356DC);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.1);
+        }
+    }
 }
