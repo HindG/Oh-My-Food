@@ -11,9 +11,15 @@
     object-position: 0 -90px;
     }
 
+    &__titlecontainer {
+        position: relative;
+        bottom: 28px;
+        border-radius: 25px 25px 0 0;
+    }
+
     &__title {
-        margin-left:20px;
-        padding: 30px 0;
+        margin-left: 20px;
+        padding: 30px 0 0 0;
         font-size: 1.7rem;
         border-radius: 25px 25px 0 0;
     }

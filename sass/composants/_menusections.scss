@@ -1,7 +1,7 @@
 .menusections {
     &__title {
         color:#7b7b7b;
-        margin: 30px 0 0 20px;
+        margin: 0 0 0 20px;
     }
 
     &__trait {
@@ -26,9 +26,22 @@
         padding: 5px 0 8px 15px;
     }
 
+    &__card__subtitlecontainer {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__card__subtitle {
-        color:#7b7b7b;
-        margin: 5px 0 10px 15px;
+        width: 100%;
+        color: #7b7b7b;
+        padding: 5px 56px 10px 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        box-sizing: border-box;
     }
 
     &__card__price {
@@ -36,5 +49,6 @@
         font-weight:bold;
         right: 22px;
         font-size: 0.9rem;
+        margin: 5px 0 10px 0;
     }
 }

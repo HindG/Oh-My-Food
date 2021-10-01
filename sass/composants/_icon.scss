@@ -7,9 +7,16 @@
     color:#ffffff;
 }
 
-.fa-heart {
-    position:absolute;
+.fa-heart__hp {
+    position: absolute;
     right: 30px;
     bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.fa-heart__pagedetail {
+    position: absolute;
+    right: 30px;
+    top: 30px;
     font-size: 1.8rem;
 }

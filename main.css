@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -155,10 +156,17 @@ h1 {
   color: #ffffff;
 }
 
-.fa-heart {
+.fa-heart__hp {
   position: absolute;
   right: 30px;
   bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.fa-heart__pagedetail {
+  position: absolute;
+  right: 30px;
+  top: 30px;
   font-size: 1.8rem;
 }
 
@@ -255,16 +263,21 @@ h1 {
 .coverrestaurant__img__portrait {
   object-position: 0 -90px;
 }
+.coverrestaurant__titlecontainer {
+  position: relative;
+  bottom: 28px;
+  border-radius: 25px 25px 0 0;
+}
 .coverrestaurant__title {
   margin-left: 20px;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   font-size: 1.7rem;
   border-radius: 25px 25px 0 0;
 }
 
 .menusections__title {
   color: #7b7b7b;
-  margin: 30px 0 0 20px;
+  margin: 0 0 0 20px;
 }
 .menusections__trait {
   background-color: #99E2D0;
@@ -285,15 +298,28 @@ h1 {
   font-weight: bold;
   padding: 5px 0 8px 15px;
 }
+.menusections__card__subtitlecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .menusections__card__subtitle {
+  width: 100%;
   color: #7b7b7b;
-  margin: 5px 0 10px 15px;
+  padding: 5px 56px 10px 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  box-sizing: border-box;
 }
 .menusections__card__price {
   position: absolute;
   font-weight: bold;
   right: 22px;
   font-size: 0.9rem;
+  margin: 5px 0 10px 0;
 }
 
 .cta {
