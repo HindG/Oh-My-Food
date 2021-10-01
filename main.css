@@ -312,6 +312,15 @@ h1 {
   box-shadow: 0px 0px 10px 1px #cccccc;
   position: relative;
 }
+.menusections__card--anim1 {
+  animation: mealentrance 500ms ease-out 100ms 1 normal forwards;
+}
+.menusections__card--anim2 {
+  animation: mealentrance 500ms ease-out 300ms 1 normal forwards;
+}
+.menusections__card--anim3 {
+  animation: mealentrance 500ms ease-out 500ms 1 normal forwards;
+}
 .menusections__card__title {
   font-weight: bold;
   padding: 5px 0 8px 15px;
@@ -359,6 +368,69 @@ h1 {
 .cta:hover {
   background: linear-gradient(#fc8ede, #b077f1);
   box-shadow: 0px 0px 5px 1px #5f5e5e;
+}
+
+.loadingspinner {
+  display: inline-block;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  left: 42%;
+  top: 42%;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px 5px #cccccc;
+  z-index: 1;
+  animation: loadingspinner__container 3s ease 1s 1 normal forwards;
+}
+.loadingspinner div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #9356DC;
+  border-radius: 50%;
+  animation: loadingspinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) 1.2s;
+  border-color: #9356DC transparent transparent transparent;
+  animation-duration: 2.4s;
+}
+.loadingspinner div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loadingspinner div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loadingspinner div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes loadingspinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loadingspinner__container {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mealentrance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,60 @@
+.loadingspinner {
+    display: inline-block;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left:42%;
+    top:42%;
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 15px 5px #cccccc;
+    z-index:1;
+    animation: loadingspinner__container 3s ease 1s 1 normal forwards;
+    
+    & div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid $colour-primary;
+        border-radius: 50%;
+        animation: loadingspinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) 1.2s;
+        border-color: $colour-primary transparent transparent transparent;
+        animation-duration:2.4s;
+    }
+    
+    & div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+    
+    & div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+  
+    & div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+    
+}
+
+@keyframes loadingspinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadingspinner__container {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
