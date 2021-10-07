@@ -21,15 +21,15 @@
         position:relative;
 
         &--anim1 {
-            animation: mealentrance 500ms ease-out 100ms 1 normal forwards;
+            animation: mealentrance 500ms ease-out 100ms 1 normal both;
         }
 
         &--anim2 {
-            animation: mealentrance 500ms ease-out 300ms 1 normal forwards;
+            animation: mealentrance 500ms ease-out 300ms 1 normal both;
         }
 
         &--anim3 {
-            animation: mealentrance 500ms ease-out 500ms 1 normal forwards;
+            animation: mealentrance 500ms ease-out 500ms 1 normal both;
         }
     }
 
