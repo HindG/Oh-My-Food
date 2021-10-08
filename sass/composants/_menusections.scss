@@ -37,6 +37,10 @@
             animation: mealentrance 500ms ease-out 500ms 1 normal both;
         }
 
+        &--anim4 {
+            animation: mealentrance 500ms ease-out 700ms 1 normal both;
+        }
+
         &:hover .menusections__checkbox {
             animation: checkboxslide 500ms ease-in 1 both;
         }
