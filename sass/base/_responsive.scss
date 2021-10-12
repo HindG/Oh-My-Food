@@ -1,0 +1,54 @@
+@media all and (min-width:600px) {
+    .hprestaurantscard {
+        max-width:345px;
+    }
+
+    .restaurantsresponsive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (min-width:895px) {
+
+    .footer__container {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menusections {
+        text-align: center;
+
+        &__card {
+            max-width:700px;
+        }
+
+        &__trait {
+            margin: 5px auto;
+        }
+    }
+
+    .coverrestaurant__title {
+        text-align:center;
+        padding: 30px 0 30px 0;
+    }
+
+    .fa-heart__pagedetail {
+        top: 67px;
+        right:49%;
+    }
+
+}
+
+@media all and (min-width:1000px) {
+    .hptitles {
+        text-align: center;
+    }
+
+}

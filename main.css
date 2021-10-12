@@ -63,6 +63,12 @@ a {
   background-color: #eaeaea;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 @font-face {
   font-family: "Shrikhand";
   src: url("./sass/base/Shrikhand-Regular.ttf");
@@ -86,6 +92,10 @@ h1 {
   width: 100%;
   background-color: #ffffff;
 }
+.header__container {
+  max-width: 1440px;
+  margin: auto;
+}
 .header__logoshadow {
   box-shadow: 0px 0px 5px 0px grey;
   margin-bottom: 5px;
@@ -97,9 +107,11 @@ h1 {
 .header__logo__img {
   width: 50%;
   padding: 16px;
+  max-width: 400px;
 }
 .header__arrow__url {
   color: #353535;
+  position: relative;
 }
 
 .fa-arrow-left {
@@ -150,6 +162,7 @@ h1 {
   padding-top: 35px;
   font-weight: bold;
   font-size: 1.3rem;
+  padding-bottom: 20px;
 }
 
 .fa-map-marker-alt {
@@ -215,12 +228,20 @@ h1 {
   padding: 8px 20px;
   box-shadow: 0px 0px 13px 2px #cccccc;
   position: relative;
+  max-width: 500px;
 }
 .operating__item:hover {
   background-color: #f5edff;
 }
 .operating__item:hover .fas {
   color: #9356DC;
+}
+.operating__number {
+  margin: 0;
+  color: #ffffff;
+  position: absolute;
+  left: 5px;
+  top: 2px;
 }
 .operating__number__container {
   background-color: #9356DC;
@@ -229,13 +250,6 @@ h1 {
   height: 20px;
   position: absolute;
   left: -8px;
-}
-.operating__number {
-  margin: 0;
-  color: #ffffff;
-  position: absolute;
-  left: 5px;
-  top: 2px;
 }
 .operating__icon {
   color: #7e7e7e;
@@ -274,6 +288,10 @@ h1 {
   width: 90px;
   margin: 20px;
 }
+.footer__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .coverrestaurant {
   position: relative;
@@ -296,8 +314,12 @@ h1 {
   padding: 30px 0 0 0;
   font-size: 1.7rem;
   border-radius: 25px 25px 0 0;
+  width: calc(100% - 80px);
 }
 
+.menusections {
+  margin: 0 10px;
+}
 .menusections__title {
   color: #7b7b7b;
   margin: 0 0 0 20px;
@@ -306,13 +328,12 @@ h1 {
   background-color: #99E2D0;
   height: 3px;
   width: 40px;
-  margin-left: 20px;
   margin: 5px 0 0 20px;
 }
 .menusections__card {
   background-color: #ffffff;
   border-radius: 12px;
-  margin: 12px 10px;
+  margin: 12px auto;
   box-shadow: 0px 0px 10px 1px #cccccc;
   display: flex;
   flex-direction: row;
@@ -343,14 +364,21 @@ h1 {
 .menusections__card:hover .menusections__card__price {
   animation: priceslide 500ms ease-in 1 forwards;
 }
+.menusections__card:hover .menusections__card__mealcontainer {
+  width: calc(100% - 115px);
+}
+.menusections__card__mealcontainer {
+  width: calc(100% - 50px);
+  transition: all 0.5s ease-in;
+}
 .menusections__card__title {
   font-weight: bold;
   padding: 5px 0 8px 15px;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
 }
 .menusections__card__subtitlecontainer {
   display: flex;
@@ -359,17 +387,14 @@ h1 {
   align-items: center;
 }
 .menusections__card__subtitle {
-  width: 100%;
   color: #7b7b7b;
   padding: 5px 0 10px 15px;
+  display: block;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  display: block;
-  box-sizing: border-box;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  text-align: left;
+  width: 100%;
 }
 .menusections__card__price {
   display: flex;
@@ -379,6 +404,7 @@ h1 {
   margin: 5px 0 10px 0;
   align-items: flex-end;
   height: 60px;
+  width: 50px;
   padding: 0 15px 10px 0;
 }
 .menusections__checkbox {
@@ -520,6 +546,52 @@ h1 {
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+@media all and (min-width: 600px) {
+  .hprestaurantscard {
+    max-width: 345px;
+  }
+
+  .restaurantsresponsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 895px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .menusections {
+    text-align: center;
+  }
+  .menusections__card {
+    max-width: 700px;
+  }
+  .menusections__trait {
+    margin: 5px auto;
+  }
+
+  .coverrestaurant__title {
+    text-align: center;
+    padding: 30px 0 30px 0;
+  }
+
+  .fa-heart__pagedetail {
+    top: 67px;
+    right: 49%;
+  }
+}
+@media all and (min-width: 1000px) {
+  .hptitles {
+    text-align: center;
   }
 }
 

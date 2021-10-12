@@ -1,4 +1,6 @@
 .menusections {
+    margin:0 10px;
+
     &__title {
         color:#7b7b7b;
         margin: 0 0 0 20px;
@@ -8,14 +10,13 @@
         background-color: $colour-tertiary;
         height:3px;
         width:40px;
-        margin-left:20px;
         margin: 5px 0 0 20px;
     }
 
     &__card {
         background-color: #ffffff;
         border-radius: 12px;
-        margin: 12px 10px;
+        margin: 12px auto;
         box-shadow: 0px 0px 10px 1px #cccccc;
         display:flex;
         flex-direction: row;
@@ -52,49 +53,56 @@
         &:hover .menusections__card__price {
             animation: priceslide 500ms ease-in 1 forwards;
         }
+
+        &:hover .menusections__card__mealcontainer {
+            width: calc(100% - 115px);
+        }
+
+        &__mealcontainer {
+            width: calc(100% - 50px);
+            transition: all 0.5s ease-in ;
+        }
+    
+        &__title {
+            font-weight: bold;
+            padding: 5px 0 8px 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: left;
+            width:100%;
+        }
+    
+        &__subtitlecontainer {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__subtitle {
+            color: #7b7b7b;
+            padding: 5px 0 10px 15px;
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: left;
+            width: 100%;
+        }
+    
+        &__price {
+            display: flex;
+            justify-content: flex-end;
+            font-weight:bold;
+            font-size: 0.9rem;
+            margin: 5px 0 10px 0;
+            align-items: flex-end;
+            height: 60px;
+            width:50px;
+            padding: 0 15px 10px 0;
+        }
         
-    }
-
-    &__card__title {
-        font-weight: bold;
-        padding: 5px 0 8px 15px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-    }
-
-    &__card__subtitlecontainer {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__card__subtitle {
-        width: 100%;
-        color: #7b7b7b;
-        padding: 5px 0 10px 15px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        display: block;
-        box-sizing: border-box;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-    }
-
-    &__card__price {
-        display: flex;
-        justify-content: flex-end;
-        font-weight:bold;
-        font-size: 0.9rem;
-        margin: 5px 0 10px 0;
-        align-items: flex-end;
-        height: 60px;
-        padding: 0 15px 10px 0;
     }
 
     &__checkbox {
@@ -109,9 +117,10 @@
         position:absolute;
         top:0;
         right:0;
+
+        &--slide {
+            position:relative;
+        }
     }
 
-    &__checkbox--slide {
-        position:relative;
-    }
 }

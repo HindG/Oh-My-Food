@@ -11,14 +11,14 @@
         border-radius: 25px 25px 0 0;
         max-height:190px;
         object-fit:cover;
-    }
 
-    &__img__paysage {
-        object-position: bottom;
-    }
+        &__paysage {
+            object-position: bottom;
+        }
 
-    &__img__portrait {
-        object-position: center;
+        &__portrait {
+            object-position: center;
+        }
     }
 
     &__name {
