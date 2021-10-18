@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "restaurants ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/index.scss main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HindG/Code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HindG/Code/issues"
+  },
+  "homepage": "https://github.com/HindG/Code#readme",
+  "devDependencies": {
+    "sass": "^1.43.2"
+  }
+}
